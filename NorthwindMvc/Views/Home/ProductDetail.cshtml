@@ -1,0 +1,38 @@
+@model ProductDetailViewModel
+@{
+    ViewData["Title"] = "Product Detail -" + Model.TheProduct.ProductName;
+}
+<h2>Product Detail</h2>
+<input type="text" style="visibility: hidden" id="@Model.TheProduct.ProductID"/>
+
+<hr/>
+
+@* <div>
+    <dl class="dl-horizontal">
+        <dt>Product Name</dt>
+        <dd>@Model.ProductName</dd>
+    
+
+        <dt>Category</dt>
+        <dd>@Model.CategoryId</dd>
+
+        <dt>Price</dt>
+        <dd>@Model.UnitPrice</dd>
+    </dl>
+</div> *@
+
+<div>
+        <dl class="dl-horizontal">
+        <dt>Product Name</dt>
+        <dd>@Model.TheProduct.ProductName</dd>
+    
+
+        <dt>Category</dt>
+        <dd>@Model.TheCategory.CategoryName</dd>
+
+        <dt>Price</dt>
+        <dd>@Model.TheProduct.UnitPrice</dd>
+    </dl>
+</div>
+
+

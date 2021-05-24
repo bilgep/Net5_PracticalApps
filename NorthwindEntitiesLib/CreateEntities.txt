@@ -1,0 +1,6 @@
+TERMINAL;
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+
+dotnet add package Microsoft.EntityFrameworkCore.Design
+
+dotnet ef dbcontext scaffold "Filename =../ Northwind.db" Microsoft.EntityFrameworkCore.Sqlite --namespace Packt.Shared --data-annotations --context Northwind
